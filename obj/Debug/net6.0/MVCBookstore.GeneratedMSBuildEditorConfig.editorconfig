@@ -15,12 +15,32 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/rafo/dev/dt191g/ass2/MVCBookstore
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+[/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Index/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5kZXgvQWJvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Index/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5kZXgvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Index/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5kZXgvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Index/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5kZXgvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Index/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5kZXgvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Index/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSW5kZXgvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Login/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTG9naW4vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Shared/Error.cshtml]

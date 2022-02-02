@@ -1,0 +1,19 @@
+<div>
+  <h1 class="display-4 text-center">@ViewData["Title"]</h1>
+  <p>
+    This is the best bookstore in the whole wide world. A book you can't find here is a bad book and shouldn't be read.
+    With such a wide assortment of books we are sure you will find some high quality book to buy from us. Or if you
+    just want to give us money and not buy anything that would be more than fine as well.
+  </p>
+
+  <p>Number of different titles currently in store: @ViewBag.UniqueBooks</p>
+
+  <p>List of books sorted by most expensive to cheapest:</p>
+  <ul class="list-unstyled">
+    @foreach (var book in ViewBag.Books)
+    {
+      <li>@book.Title, @book.Price</li>
+    }
+  </ul>
+
+</div>

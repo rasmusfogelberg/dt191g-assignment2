@@ -16298,8 +16298,13 @@
   "RootNamespace": "MVCBookstore",
   "Documents": [
     {
-      "FilePath": "/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FilePath": "/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Index/About.cshtml",
+      "TargetPath": "Views\\Index\\About.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Index/Create.cshtml",
+      "TargetPath": "Views\\Index\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
@@ -16313,8 +16318,28 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Home/Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FilePath": "/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Login/Index.cshtml",
+      "TargetPath": "Views\\Login\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Index/Edit.cshtml",
+      "TargetPath": "Views\\Index\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Index/Delete.cshtml",
+      "TargetPath": "Views\\Index\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Index/Index.cshtml",
+      "TargetPath": "Views\\Index\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/home/rafo/dev/dt191g/ass2/MVCBookstore/Views/Index/Details.cshtml",
+      "TargetPath": "Views\\Index\\Details.cshtml",
       "FileKind": "mvc"
     },
     {
