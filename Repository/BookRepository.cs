@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Mvc.Rendering;
+
 using MVCBookstore.Models;
 
 namespace MVCBookstore.Repository
@@ -7,6 +9,11 @@ namespace MVCBookstore.Repository
         public List<Book> SelectBooks()
         {
             return BookList.SelectBookList();
+        }
+
+        public List<SelectListItem> SelectTypes()
+        {
+            return BookList.SelectBookTypes();
         }
 
         public Book? SelectBookById(int id)

@@ -23,7 +23,7 @@ public class IndexController : Controller
 
   public IActionResult About()
   {
-    IList<Book> books = bookRepo.SelectBooks();
+    List<Book> books = bookRepo.SelectBooks();
     IEnumerable<Book> sortedBookList = books.OrderByDescending(book => book.Price).ToList();
 
     ViewData["Title"] = "About";
@@ -47,12 +47,17 @@ public class IndexController : Controller
 
   public IActionResult Create()
   {
-    return View();
+    var model = new Book
+    {
+      AvailableTypes = bookRepo.SelectTypes()
+    };
+
+    return View(model);
   }
 
   [HttpPost]
   [ValidateAntiForgeryToken]
-  public IActionResult Create([Bind("Id,Title,Author,Stock,Price,Language")] Book book)
+  public IActionResult Create([Bind("Id,Title,Author,Stock,Price,Language,SelectedTypes")] Book book)
   {
     if (ModelState.IsValid)
     {
@@ -74,6 +79,11 @@ public class IndexController : Controller
   public IActionResult Edit(int id)
   {
     Book? book = bookRepo.SelectBookById(id);
+    
+    if (book != null)
+    {
+      book.AvailableTypes = bookRepo.SelectTypes();
+    }
 
     return View(book);
   }
@@ -81,7 +91,7 @@ public class IndexController : Controller
   // POST - edit the book values
   [HttpPost]
   [ValidateAntiForgeryToken]
-  public IActionResult Edit(int id, [Bind("Id,Title,Author,Stock,Price,Language")] Book book)
+  public IActionResult Edit(int id, [Bind("Id,Title,Author,Stock,Price,Language,SelectedTypes")] Book book)
   {
     if (id != book.Id)
     {

@@ -1,4 +1,4 @@
-# RazorBookstore
+# MVCBookstore
 
 An exploration in ASP.NET MVC.
 

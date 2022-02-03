@@ -7,7 +7,7 @@
             "type": "process",
             "args": [
                 "build",
-                "${workspaceFolder}/RazorBookstore.csproj",
+                "${workspaceFolder}/MVCBookstore.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -19,7 +19,7 @@
             "type": "process",
             "args": [
                 "publish",
-                "${workspaceFolder}/RazorBookstore.csproj",
+                "${workspaceFolder}/MVCBookstore.csproj",
                 "/property:GenerateFullPaths=true",
                 "/consoleloggerparameters:NoSummary"
             ],
@@ -33,7 +33,7 @@
                 "watch",
                 "run",
                 "--project",
-                "${workspaceFolder}/RazorBookstore.csproj"
+                "${workspaceFolder}/MVCBookstore.csproj"
             ],
             "problemMatcher": "$msCompile"
         }
