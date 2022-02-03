@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace MVCBookstore.Models
 {
+  // Model for the Book entity
   public class Book
   {
     private static int bookId = 1;
@@ -32,11 +33,6 @@ namespace MVCBookstore.Models
     [EnumDataType(typeof(_Language))]
     public _Language Language { get; set; }
 
-    // two lists
-    // first list tracks items that are currently "selected"/"checked"
-    // second list tracks all available options to "select"/"check"
-
-    // List of strings for types of books
     public List<string> SelectedTypes { get; set; } = new List<string>();
     public List<SelectListItem> AvailableTypes { get; set; } = new List<SelectListItem>();
 

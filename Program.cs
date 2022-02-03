@@ -9,11 +9,13 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddDistributedMemoryCache();
 
+// Add cookie authentication
 builder.Services
     .AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
     .AddCookie(
         options =>
         {
+            // Set cookie expiration time
             options.ExpireTimeSpan = TimeSpan.FromMinutes(20);
             options.Cookie.Name = ".MVCBookstore";
             options.LoginPath = "/Login";
@@ -29,6 +31,7 @@ if (!app.Environment.IsDevelopment())
   app.UseHsts();
 }
 
+// Set culture to show $ when DataType.Currency is used
 var supportedCultures = new []
 {
     new CultureInfo("en-US")

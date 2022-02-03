@@ -11,9 +11,6 @@ public class IndexController : Controller
 {
 
   BookRepository bookRepo = new BookRepository();
-  public IndexController()
-  {
-  }
 
   public IActionResult Index()
   {
@@ -21,6 +18,7 @@ public class IndexController : Controller
     return View(books);
   }
 
+  // Using ViewBag to show information on the about page
   public IActionResult About()
   {
     List<Book> books = bookRepo.SelectBooks();
@@ -45,6 +43,7 @@ public class IndexController : Controller
     return View(book);
   }
 
+  // GET - display the create-view
   public IActionResult Create()
   {
     var model = new Book
@@ -55,6 +54,7 @@ public class IndexController : Controller
     return View(model);
   }
 
+  // POST - stores the input values
   [HttpPost]
   [ValidateAntiForgeryToken]
   public IActionResult Create([Bind("Id,Title,Author,Stock,Price,Language,SelectedTypes")] Book book)
@@ -62,8 +62,9 @@ public class IndexController : Controller
     if (ModelState.IsValid)
     {
       try
-      {
+      { // Calling the method in the BookRepository.cs
         bookRepo.InsertBook(book);
+        // Redirecting user to Index-view
         return RedirectToAction(nameof(Index));
       }
       catch
@@ -79,7 +80,7 @@ public class IndexController : Controller
   public IActionResult Edit(int id)
   {
     Book? book = bookRepo.SelectBookById(id);
-    
+
     if (book != null)
     {
       book.AvailableTypes = bookRepo.SelectTypes();

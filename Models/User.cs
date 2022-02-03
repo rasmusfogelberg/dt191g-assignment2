@@ -3,6 +3,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MVCBookstore.Models
 {
+    // Model for User entity
     public class User
     {
         [Required]
