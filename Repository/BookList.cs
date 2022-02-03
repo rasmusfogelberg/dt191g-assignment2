@@ -11,11 +11,11 @@ namespace MVCBookstore.Repository
         {
             bookList = new List<Book>()
             {
-                new Book { Title = "1984", Author = "George Orwell", Stock = 10, Price = 59.99m },
-                new Book { Title = "Sword of Destiny", Author = "Andrzej Sapkowski", Stock = 2, Price = 27.99m },
-                new Book { Title = "The Last Wish", Author = "Andrzej Sapkowski", Stock = 3, Price = 25.99m },
-                new Book { Title = "The Way of Kings", Author = "Brandon Sanderson", Stock = 1, Price = 69.99m },
-                new Book { Title = "Oathbringer", Author = "Brandon Sanderson", Stock = 2, Price = 79.99m },
+                new Book { Title = "1984", Author = "George Orwell", Stock = 10, Price = 59.99m, Language = Book._Language.Swedish },
+                new Book { Title = "Sword of Destiny", Author = "Andrzej Sapkowski", Stock = 2, Price = 27.99m, Language = Book._Language.Czech },
+                new Book { Title = "The Last Wish", Author = "Andrzej Sapkowski", Stock = 3, Price = 25.99m, Language = Book._Language.Czech },
+                new Book { Title = "The Way of Kings", Author = "Brandon Sanderson", Stock = 1, Price = 69.99m, Language = Book._Language.English },
+                new Book { Title = "Oathbringer", Author = "Brandon Sanderson", Stock = 2, Price = 79.99m, Language = Book._Language.English },
             };
         }
 
@@ -39,6 +39,7 @@ namespace MVCBookstore.Repository
                 bookToUpdate.Author = book.Author;
                 bookToUpdate.Stock = book.Stock;
                 bookToUpdate.Price = book.Price;
+                bookToUpdate.Language = book.Language;
             }
         }
 

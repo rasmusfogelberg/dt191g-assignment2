@@ -52,7 +52,7 @@ public class IndexController : Controller
 
   [HttpPost]
   [ValidateAntiForgeryToken]
-  public IActionResult Create([Bind("Id,Title,Author,Stock,Price,BookLanguage")] Book book)
+  public IActionResult Create([Bind("Id,Title,Author,Stock,Price,Language")] Book book)
   {
     if (ModelState.IsValid)
     {
@@ -81,7 +81,7 @@ public class IndexController : Controller
   // POST - edit the book values
   [HttpPost]
   [ValidateAntiForgeryToken]
-  public IActionResult Edit(int id, [Bind("Id,Title,Author,Stock,Price")] Book book)
+  public IActionResult Edit(int id, [Bind("Id,Title,Author,Stock,Price,Language")] Book book)
   {
     if (id != book.Id)
     {

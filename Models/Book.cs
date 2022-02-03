@@ -25,10 +25,10 @@ namespace MVCBookstore.Models
         [Column(TypeName = "decimal(18, 2)")]
         public decimal Price { get; set; }
 
-        public enum Language { Swedish, English, Czech };
+        public enum _Language { Czech, English, Swedish };
 
         [Required]
-        [EnumDataType(typeof(Language))]
-        public Language BookLanguage { get; set; }
+        [EnumDataType(typeof(_Language))]
+        public _Language Language { get; set; }
     }
 }

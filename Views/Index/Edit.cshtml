@@ -34,11 +34,11 @@
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
             <div class="form-group mt-2">
-                <label asp-for="BookLanguage" class="col-md-2 control-label">Language</label>
-                <select class="form-select" asp-for="BookLanguage" asp-items="Html.GetEnumSelectList<Book.Language>()">
-                    <option selected="selected" value="Book.Language">Please select</option>
+                <label asp-for="Language" class="col-md-2 control-label">Language</label>
+                <select class="form-select" asp-for="Language" asp-items="Html.GetEnumSelectList<Book._Language>()">
+                    <option selected="selected" value="Book._Language">Please select</option>
                 </select>
-                <span asp-validation-for="BookLanguage" class="text-danger" />
+                <span asp-validation-for="Language" class="text-danger" />
             </div>
             <div class="form-group mt-2">
                 <input type="submit" value="Save" class="btn btn-primary" />
